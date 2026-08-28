@@ -34,6 +34,7 @@ class _AnimatedfooScreenState extends State<AnimatedfooScreen> {
 
 Widget ContainerWidget(double hieght, double width) {
   return AnimatedContainer(
+    curve: Curves.easeInOutExpo,
      decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.blue,
