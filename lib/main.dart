@@ -1,3 +1,4 @@
+import 'package:animation_corse/presentation/tween_animation_screen.dart';
 import 'package:animation_corse/presentation/views/simple_container.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Animation',
   
-      home: const AnimatedfooScreen(),
+      home:
+       const CounterAnimation(),
+      //const AnimatedfooScreen(),
     );
   }
 }
