@@ -7,6 +7,7 @@ class FooTransitionBasics extends StatefulWidget {
   State<FooTransitionBasics> createState() => _FooTransitionBasicsState();
 }
 
+//there is SingleTickerProviderStateMixin class which is used to provide a single ticker for the animation controller. It is used when you have only one animation controller in your widget. If you have multiple animation controllers, you can use TickerProviderStateMixin instead.
 class _FooTransitionBasicsState extends State<FooTransitionBasics>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
@@ -17,7 +18,9 @@ class _FooTransitionBasicsState extends State<FooTransitionBasics>
   void initState() {
     super.initState();
     _controller = AnimationController(
+      //TickerProvider class
       vsync: this,
+      //duration is not required attribute but it will give exeption if we negle
       duration: const Duration(seconds: 2),
     );
 
