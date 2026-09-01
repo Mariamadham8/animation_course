@@ -27,7 +27,7 @@ class _FooTransitionBasicsState extends State<FooTransitionBasics>
     _redAlignment = Tween<AlignmentGeometry>(
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
-    ).animate(_controller);
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
 
     _blackAlignment = Tween<AlignmentGeometry>(
       begin: Alignment.centerLeft,

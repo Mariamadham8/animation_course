@@ -1,4 +1,5 @@
-import 'package:animation_corse/presentation/tween_animation_screen.dart';
+import 'package:animation_corse/presentation/animation_demo.dart';
+import 'package:animation_corse/presentation/views/tween_animation_screen.dart';
 import 'package:animation_corse/presentation/views/foo_transition_basics.dart';
 import 'package:animation_corse/presentation/views/simple_container.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Animation',
       debugShowCheckedModeBanner: false,
-      home: const FooTransitionBasics(),
+      home: const AnimDemoHub(),
+      //const FooTransitionBasics(),
       //const CounterAnimation(),
       //const AnimatedfooScreen(),
     );
