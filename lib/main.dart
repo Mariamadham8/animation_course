@@ -1,4 +1,5 @@
 import 'package:animation_corse/presentation/animation_demo.dart';
+import 'package:animation_corse/presentation/views/animated_builder.dart';
 import 'package:animation_corse/presentation/views/record_button_demo.dart';
 import 'package:animation_corse/presentation/views/tween_animation_screen.dart';
 import 'package:animation_corse/presentation/views/foo_transition_basics.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Animation',
       debugShowCheckedModeBanner: false,
-      home: RecordButtonDemo(),
+      home: AnimationBuilder(),
+      //RecordButtonDemo(),
       //const AnimDemoHub(),
       //const FooTransitionBasics(),
       //const CounterAnimation(),
